@@ -1,0 +1,16 @@
+<form class="example-form">
+
+  <mat-form-field class="example-full-width">
+    <input matInput type="number"  placeholder="Nhap tien" #giaInp (input)="gia$.next(+giaInp.value)">
+    <mat-hint align="end"></mat-hint>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput type="number" placeholder="Nhap so luong" #slInp (input)="soLuong$.next(+slInp.value)">
+    <mat-hint align="end"></mat-hint>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput type="number" placeholder="Nhap sale" #saleInp (input)="sale$.next(+saleInp.value)">
+    <mat-hint align="end"></mat-hint>
+  </mat-form-field>
+ <p>Thanh tien:{{isvalue}}</p>
+</form>
